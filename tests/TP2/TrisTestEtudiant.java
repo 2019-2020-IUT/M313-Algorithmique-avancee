@@ -73,7 +73,7 @@ public class TrisTestEtudiant {
 	}
 	
 	public static void triRapide(int[] numbers)  {
-		quickSort();
+		//quickSort();
 	}
 	
 	private static void exchange(int[] t, int i, int j) {
@@ -145,6 +145,11 @@ public class TrisTestEtudiant {
 			quickSort(numbers, i, max);
 	}
 	
+	private static int[] partitionnerPivot(int[] numbers, int i, int j, int pivot) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	@Before
 	public void setUp() throws Exception {
 	}
