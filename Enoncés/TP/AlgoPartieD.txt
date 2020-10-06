@@ -1,0 +1,18 @@
+Function decodeInmorse(ABin morse,ABin morseInUse,String msg); String 
+In: alphabet morse morse dans un arbre binaire et une copie morseInuse pour pouvoir "remonter à la racine"
+Do: renvoie le message en alphabet A-2
+Begin 
+
+if isEmpty(msg)
+   then return getUserObject(morseInUse)
+else if charAt(msg,0)=='-' then
+return decodeInMorse(morse,leftchild(morseinuse),substring(msg,1))
+else if charAt(msg,0)=='.' then
+return decodeletterInMorse(rightChild(morse),substring(msg,1))
+else return decodeLetterInMorse(morse,substring(msg,1))                 
+else if charAt(msg,0)=='/' then
+return getUserObject(morseInUse)+decodeInmorse(morse,morse,SubString(msg,1))
+else if charAt(msg,0)==' ' then 
+return getUserObject(morseInUse)+' '+ decodeInmorse(morse,morse,SubString(msg,1))
+else //optionel/
+return getUserObject(morse,morseInUse,substring(msg,1))
